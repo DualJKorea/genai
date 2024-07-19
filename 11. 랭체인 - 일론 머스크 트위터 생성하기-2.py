@@ -24,7 +24,7 @@ normal_chain = (
 chain = (
     ChatPromptTemplate.from_messages([(
         "system","write a tweet about {topic} in korean")])
-    | ChatOpenAI(model="ft:gpt-3.5-turbo-0125:personal::9aDeajJ6")
+    | ChatOpenAI(model="ft:gpt-3.5-turbo-0125:personal::xxxxxx")
     | StrOutputParser()
 )
 
