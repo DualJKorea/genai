@@ -9,7 +9,7 @@ st.title('문서 개요 생성 앱')
 openai_api_key = st.sidebar.text_input('OpenAI API 키', type='password')
 
 def generate_response(topic):
-  llm = OpenAI(model_name='gpt-3.5-turbo-instruct', openai_api_key=openai_api_key)
+  llm = OpenAI(model_name='gpt-4.1-nano', openai_api_key=openai_api_key)
   template = '{topic} 키워드로 작성할 문서의 개요를 생성해 주세요.'
   prompt = PromptTemplate(input_variables=['topic'], template=template)
   prompt_query = prompt.format(topic=topic)
