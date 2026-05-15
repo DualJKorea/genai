@@ -18,7 +18,7 @@ with open("for-tune.jsonl","rb") as my_file:
 
 try:
     job = openai.fine_tuning.jobs.create(
-        training_file=training_file.id, model="gpt-3.5-turbo")
+        training_file=training_file.id, model="gpt-4.1-nano")
 except Exception as e:
     print(e)
     
